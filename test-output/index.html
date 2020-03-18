@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-接口测试套件">
+              <span class="suite-name border-failed">接口测试套件</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-接口测试套件">
+                    <span>D:\IdeaProjects\my_api_test\src\main\resources\config\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-接口测试套件">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-接口测试套件">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-接口测试套件">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-接口测试套件">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-接口测试套件">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-接口测试套件">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-接口测试套件" class="hide-methods failed suite-接口测试套件"> (hide)</a> <!-- hide-methods failed suite-接口测试套件 -->
+                      <a href="#" panel-name="suite-接口测试套件" class="show-methods failed suite-接口测试套件"> (show)</a> <!-- show-methods failed suite-接口测试套件 -->
+                    </span>
+                    <div class="method-list-content failed suite-接口测试套件">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-接口测试套件" title="com.zk.test.APIautoTest" hash-for-method="test1({case=1.0, url=https://www.baidu.com/, parames={&quot;argsTypes&quot;:[&quot;java.lang.String&quot;,&quot;java.lang.String&quot;,&quot;...)">test1({case=1.0, url=https://www.baidu.com/, parames={"argsTypes":["java.lang.String","java.lang.String","...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-接口测试套件 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-接口测试套件" class="panel 接口测试套件">
+          <div class="suite-接口测试套件-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zk.test.APIautoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1({case=1.0, url=https://www.baidu.com/, parames={&quot;argsTypes&quot;:[&quot;java.lang.String&quot;,&quot;java.lang.String&quot;,&quot;...)">
+                  </a> <!-- test1({case=1.0, url=https://www.baidu.com/, parames={"argsTypes":["java.lang.String","java.lang.String","...) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">({case=1.0, url=https://www.baidu.com/, parames={"argsTypes":["java.lang.String","java.lang.String","com.taobao.ocr.base.prism.Property","java.lang.String","com.taobao.ocr.client.constants.StructuredType","java.lang.String"],"argsObjs":["https://oats.oss-cn-hangzhou.aliyuncs.com/test/imgset_ocr/idcard/T1D49UXvddXXXXXXXX.jpg","",{"rotate":true},"TB_jack_004e1a3398df4911ae846b7cae21832f","idcard","ac09c33aee80d7465c77cc26e8bae84b"]}, ResponseCode=, Response=, 预期结果={"code":20,"data":{"code":200,"data":{"angle":0,"data":{"姓名":"蒋戈雁","性别":"女","民族":"汉","出生日期":"1998年6月27日","住址":"杭州市上城区黄公厂弄5号102室","身份证号码":"432501199806270023"},"figure":null,"height":1840,"orgHeight":1840,"orgWidth":3264,"recquality":null,"sid":"51296c12fe03a3b52dc3b08997abe90e4e9498c4e4b2afb7a4cd2ec8ece7527281815456","type":null,"width":3264,"wordsInfo":null},"message":null,"successful":true},"success":true,"message":"HSF Provider process succeed."}, 对比结果=})</span>
+                  <div class="stack-trace">com.alibaba.fastjson.JSONException: syntax error, pos 1, line 1, column 2&lt;!DOCTYPE html&gt;
+&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;&lt;meta http-equiv=X-UA-Compatible content=IE=Edge&gt;&lt;meta content=always name=referrer&gt;&lt;link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css&gt;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt; &lt;body link=#0000cc&gt; &lt;div id=wrapper&gt; &lt;div id=head&gt; &lt;div class=head_wrapper&gt; &lt;div class=s_form&gt; &lt;div class=s_form_wrapper&gt; &lt;div id=lg&gt; &lt;img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129&gt; &lt;/div&gt; &lt;form id=form name=f action=//www.baidu.com/s class=fm&gt; &lt;input type=hidden name=bdorz_come value=1&gt; &lt;input type=hidden name=ie value=utf-8&gt; &lt;input type=hidden name=f value=8&gt; &lt;input type=hidden name=rsv_bp value=1&gt; &lt;input type=hidden name=rsv_idx value=1&gt; &lt;input type=hidden name=tn value=baidu&gt;&lt;span class=&quot;bg s_ipt_wr&quot;&gt;&lt;input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus&gt;&lt;/span&gt;&lt;span class=&quot;bg s_btn_wr&quot;&gt;&lt;input type=submit id=su value=百度一下 class=&quot;bg s_btn&quot; autofocus&gt;&lt;/span&gt; &lt;/form&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=u1&gt; &lt;a href=http://news.baidu.com name=tj_trnews class=mnav&gt;新闻&lt;/a&gt; &lt;a href=https://www.hao123.com name=tj_trhao123 class=mnav&gt;hao123&lt;/a&gt; &lt;a href=http://map.baidu.com name=tj_trmap class=mnav&gt;地图&lt;/a&gt; &lt;a href=http://v.baidu.com name=tj_trvideo class=mnav&gt;视频&lt;/a&gt; &lt;a href=http://tieba.baidu.com name=tj_trtieba class=mnav&gt;贴吧&lt;/a&gt; &lt;noscript&gt; &lt;a href=http://www.baidu.com/bdorz/login.gif?login&amp;amp;tpl=mn&amp;amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb&gt;登录&lt;/a&gt; &lt;/noscript&gt; &lt;script&gt;document.write(&apos;&lt;a href=&quot;http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=&apos;+ encodeURIComponent(window.location.href+ (window.location.search === &quot;&quot; ? &quot;?&quot; : &quot;&amp;&quot;)+ &quot;bdorz_come=1&quot;)+ &apos;&quot; name=&quot;tj_login&quot; class=&quot;lb&quot;&gt;登录&lt;/a&gt;&apos;);
+                &lt;/script&gt; &lt;a href=//www.baidu.com/more/ name=tj_briicon class=bri style=&quot;display: block;&quot;&gt;更多产品&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=ftCon&gt; &lt;div id=ftConw&gt; &lt;p id=lh&gt; &lt;a href=http://home.baidu.com&gt;关于百度&lt;/a&gt; &lt;a href=http://ir.baidu.com&gt;About Baidu&lt;/a&gt; &lt;/p&gt; &lt;p id=cp&gt;&amp;copy;2017&amp;nbsp;Baidu&amp;nbsp;&lt;a href=http://www.baidu.com/duty/&gt;使用百度前必读&lt;/a&gt;&amp;nbsp; &lt;a href=http://jianyi.baidu.com/ class=cp-feedback&gt;意见反馈&lt;/a&gt;&amp;nbsp;京ICP证030173号&amp;nbsp; &lt;img src=//www.baidu.com/img/gs.gif&gt; &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;
+
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parse(DefaultJSONParser.java:1480)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parse(DefaultJSONParser.java:1366)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:170)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:180)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:149)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:241)
+	at com.zk.utils.HttpsUtils.doPost(HttpsUtils.java:162)
+	at com.zk.test.APIautoTest.post(APIautoTest.java:38)
+	at com.zk.test.APIautoTest.test1(APIautoTest.java:108)
+	at com.zk.Test1.main(Test1.java:31)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-接口测试套件-class-failed -->
+        </div> <!-- panel 接口测试套件 -->
+        <div panel-name="test-xml-接口测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\IdeaProjects\my_api_test\src\main\resources\config\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;接口测试套件&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.zk.test.listener.ExtentTestNGIReporterListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.zk.test.listener.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.zk.test.listener.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;测试模块&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.zk.test.APIautoTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test1&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zk.test.APIautoTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 测试模块 --&gt;
+  &lt;test name=&quot;测试模块(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.zk.test.APIautoTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test1&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;afterClass&quot;/&gt;
+          &lt;include name=&quot;beforeClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.zk.test.APIautoTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 测试模块(failed) --&gt;
+&lt;/suite&gt; &lt;!-- 接口测试套件 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-接口测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for 接口测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">测试模块 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">测试模块(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-接口测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for 接口测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-接口测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for 接口测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_接口测试套件');
+function tableData_接口测试套件() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'com.zk.test.APIautoTest')
+data.setCell(0, 3, 588);
+window.suiteTableData['接口测试套件']= { tableData: data, tableDiv: 'times-div-接口测试套件'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 588 ms</span>
+              <div id="times-div-接口测试套件">
+              </div> <!-- times-div-接口测试套件 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-接口测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for 接口测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test1({case=1.0, url=https://www.baidu.com/, parames={"argsTypes":["java.lang.String","java.lang.String","...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">1584540509445===执行case:1.0</span>
+                <span class="reporter-method-output">1584540509445===执行URL:https://www.baidu.com/</span>
+                <span class="reporter-method-output">1584540509445===执行parames:{"argsTypes":["java.lang.String","java.lang.String","com.taobao.ocr.base.prism.Property","java.lang.String","com.taobao.ocr.client.constants.StructuredType","java.lang.String"],"argsObjs":["https://oats.oss-cn-hangzhou.aliyuncs.com/test/imgset_ocr/idcard/T1D49UXvddXXXXXXXX.jpg","",{"rotate":true},"TB_jack_004e1a3398df4911ae846b7cae21832f","idcard","ac09c33aee80d7465c77cc26e8bae84b"]}</span>
+                <span class="reporter-method-output">1584540509445===预期结果Expected:{"code":20,"data":{"code":200,"data":{"angle":0,"data":{"姓名":"蒋戈雁","性别":"女","民族":"汉","出生日期":"1998年6月27日","住址":"杭州市上城区黄公厂弄5号102室","身份证号码":"432501199806270023"},"figure":null,"height":1840,"orgHeight":1840,"orgWidth":3264,"recquality":null,"sid":"51296c12fe03a3b52dc3b08997abe90e4e9498c4e4b2afb7a4cd2ec8ece7527281815456","type":null,"width":3264,"wordsInfo":null},"message":null,"successful":true},"success":true,"message":"HSFProviderprocesssucceed."}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-接口测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zk.test.APIautoTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-接口测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zk.test.APIautoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test1({case=1.0, url=https://www.baidu.com/, parames={"argsTypes":["java.lang.String","java.lang.String","...)</span>
+                <span class="method-start">430 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">1018 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

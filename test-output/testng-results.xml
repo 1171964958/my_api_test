@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[1584540509445===执行case:1.0]]>
+    </line>
+    <line>
+      <![CDATA[1584540509445===执行URL:https://www.baidu.com/]]>
+    </line>
+    <line>
+      <![CDATA[1584540509445===执行parames:{"argsTypes":["java.lang.String","java.lang.String","com.taobao.ocr.base.prism.Property","java.lang.String","com.taobao.ocr.client.constants.StructuredType","java.lang.String"],"argsObjs":["https://oats.oss-cn-hangzhou.aliyuncs.com/test/imgset_ocr/idcard/T1D49UXvddXXXXXXXX.jpg","",{"rotate":true},"TB_jack_004e1a3398df4911ae846b7cae21832f","idcard","ac09c33aee80d7465c77cc26e8bae84b"]}]]>
+    </line>
+    <line>
+      <![CDATA[1584540509445===预期结果Expected:{"code":20,"data":{"code":200,"data":{"angle":0,"data":{"姓名":"蒋戈雁","性别":"女","民族":"汉","出生日期":"1998年6月27日","住址":"杭州市上城区黄公厂弄5号102室","身份证号码":"432501199806270023"},"figure":null,"height":1840,"orgHeight":1840,"orgWidth":3264,"recquality":null,"sid":"51296c12fe03a3b52dc3b08997abe90e4e9498c4e4b2afb7a4cd2ec8ece7527281815456","type":null,"width":3264,"wordsInfo":null},"message":null,"successful":true},"success":true,"message":"HSFProviderprocesssucceed."}]]>
+    </line>
+  </reporter-output>
+  <suite name="接口测试套件" duration-ms="1022" started-at="2020-03-18T14:08:29Z" finished-at="2020-03-18T14:08:30Z">
+    <groups>
+    </groups>
+    <test name="测试模块" duration-ms="1022" started-at="2020-03-18T14:08:29Z" finished-at="2020-03-18T14:08:30Z">
+      <class name="com.zk.test.APIautoTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zk.test.APIautoTest@60215eee]" name="beforeClass" is-config="true" duration-ms="6" started-at="2020-03-18T22:08:29Z" finished-at="2020-03-18T22:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="test1(java.util.Map)[pri:0, instance:com.zk.test.APIautoTest@60215eee]" name="test1" duration-ms="588" started-at="2020-03-18T22:08:29Z" data-provider="dataMethod" finished-at="2020-03-18T22:08:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{case=1.0, url=https://www.baidu.com/, parames={"argsTypes":["java.lang.String","java.lang.String","com.taobao.ocr.base.prism.Property","java.lang.String","com.taobao.ocr.client.constants.StructuredType","java.lang.String"],"argsObjs":["https://oats.oss-cn-hangzhou.aliyuncs.com/test/imgset_ocr/idcard/T1D49UXvddXXXXXXXX.jpg","",{"rotate":true},"TB_jack_004e1a3398df4911ae846b7cae21832f","idcard","ac09c33aee80d7465c77cc26e8bae84b"]}, ResponseCode=, Response=, 预期结果={"code":20,"data":{"code":200,"data":{"angle":0,"data":{"姓名":"蒋戈雁","性别":"女","民族":"汉","出生日期":"1998年6月27日","住址":"杭州市上城区黄公厂弄5号102室","身份证号码":"432501199806270023"},"figure":null,"height":1840,"orgHeight":1840,"orgWidth":3264,"recquality":null,"sid":"51296c12fe03a3b52dc3b08997abe90e4e9498c4e4b2afb7a4cd2ec8ece7527281815456","type":null,"width":3264,"wordsInfo":null},"message":null,"successful":true},"success":true,"message":"HSF Provider process succeed."}, 对比结果=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.alibaba.fastjson.JSONException">
+            <message>
+              <![CDATA[syntax error, pos 1, line 1, column 2<!DOCTYPE html>
+<!--STATUS OK--><html> <head><meta http-equiv=content-type content=text/html;charset=utf-8><meta http-equiv=X-UA-Compatible content=IE=Edge><meta content=always name=referrer><link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css><title>百度一下，你就知道</title></head> <body link=#0000cc> <div id=wrapper> <div id=head> <div class=head_wrapper> <div class=s_form> <div class=s_form_wrapper> <div id=lg> <img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129> </div> <form id=form name=f action=//www.baidu.com/s class=fm> <input type=hidden name=bdorz_come value=1> <input type=hidden name=ie value=utf-8> <input type=hidden name=f value=8> <input type=hidden name=rsv_bp value=1> <input type=hidden name=rsv_idx value=1> <input type=hidden name=tn value=baidu><span class="bg s_ipt_wr"><input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus></span><span class="bg s_btn_wr"><input type=submit id=su value=百度一下 class="bg s_btn" autofocus></span> </form> </div> </div> <div id=u1> <a href=http://news.baidu.com name=tj_trnews class=mnav>新闻</a> <a href=https://www.hao123.com name=tj_trhao123 class=mnav>hao123</a> <a href=http://map.baidu.com name=tj_trmap class=mnav>地图</a> <a href=http://v.baidu.com name=tj_trvideo class=mnav>视频</a> <a href=http://tieba.baidu.com name=tj_trtieba class=mnav>贴吧</a> <noscript> <a href=http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb>登录</a> </noscript> <script>document.write('<a href="http://www.baidu.com/bdorz/login.gif?login&tpl=mn&u='+ encodeURIComponent(window.location.href+ (window.location.search === "" ? "?" : "&")+ "bdorz_come=1")+ '" name="tj_login" class="lb">登录</a>');
+                </script> <a href=//www.baidu.com/more/ name=tj_briicon class=bri style="display: block;">更多产品</a> </div> </div> </div> <div id=ftCon> <div id=ftConw> <p id=lh> <a href=http://home.baidu.com>关于百度</a> <a href=http://ir.baidu.com>About Baidu</a> </p> <p id=cp>&copy;2017&nbsp;Baidu&nbsp;<a href=http://www.baidu.com/duty/>使用百度前必读</a>&nbsp; <a href=http://jianyi.baidu.com/ class=cp-feedback>意见反馈</a>&nbsp;京ICP证030173号&nbsp; <img src=//www.baidu.com/img/gs.gif> </p> </div> </div> </div> </body> </html>
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.alibaba.fastjson.JSONException: syntax error, pos 1, line 1, column 2<!DOCTYPE html>
+<!--STATUS OK--><html> <head><meta http-equiv=content-type content=text/html;charset=utf-8><meta http-equiv=X-UA-Compatible content=IE=Edge><meta content=always name=referrer><link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css><title>百度一下，你就知道</title></head> <body link=#0000cc> <div id=wrapper> <div id=head> <div class=head_wrapper> <div class=s_form> <div class=s_form_wrapper> <div id=lg> <img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129> </div> <form id=form name=f action=//www.baidu.com/s class=fm> <input type=hidden name=bdorz_come value=1> <input type=hidden name=ie value=utf-8> <input type=hidden name=f value=8> <input type=hidden name=rsv_bp value=1> <input type=hidden name=rsv_idx value=1> <input type=hidden name=tn value=baidu><span class="bg s_ipt_wr"><input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus></span><span class="bg s_btn_wr"><input type=submit id=su value=百度一下 class="bg s_btn" autofocus></span> </form> </div> </div> <div id=u1> <a href=http://news.baidu.com name=tj_trnews class=mnav>新闻</a> <a href=https://www.hao123.com name=tj_trhao123 class=mnav>hao123</a> <a href=http://map.baidu.com name=tj_trmap class=mnav>地图</a> <a href=http://v.baidu.com name=tj_trvideo class=mnav>视频</a> <a href=http://tieba.baidu.com name=tj_trtieba class=mnav>贴吧</a> <noscript> <a href=http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb>登录</a> </noscript> <script>document.write('<a href="http://www.baidu.com/bdorz/login.gif?login&tpl=mn&u='+ encodeURIComponent(window.location.href+ (window.location.search === "" ? "?" : "&")+ "bdorz_come=1")+ '" name="tj_login" class="lb">登录</a>');
+                </script> <a href=//www.baidu.com/more/ name=tj_briicon class=bri style="display: block;">更多产品</a> </div> </div> </div> <div id=ftCon> <div id=ftConw> <p id=lh> <a href=http://home.baidu.com>关于百度</a> <a href=http://ir.baidu.com>About Baidu</a> </p> <p id=cp>&copy;2017&nbsp;Baidu&nbsp;<a href=http://www.baidu.com/duty/>使用百度前必读</a>&nbsp; <a href=http://jianyi.baidu.com/ class=cp-feedback>意见反馈</a>&nbsp;京ICP证030173号&nbsp; <img src=//www.baidu.com/img/gs.gif> </p> </div> </div> </div> </body> </html>
+
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parse(DefaultJSONParser.java:1480)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parse(DefaultJSONParser.java:1366)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:170)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:180)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:149)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:241)
+	at com.zk.utils.HttpsUtils.doPost(HttpsUtils.java:162)
+	at com.zk.test.APIautoTest.post(APIautoTest.java:38)
+	at com.zk.test.APIautoTest.test1(APIautoTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at com.zk.Test1.main(Test1.java:31)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.alibaba.fastjson.JSONException -->
+          <reporter-output>
+            <line>
+              <![CDATA[1584540509445===执行case:1.0]]>
+            </line>
+            <line>
+              <![CDATA[1584540509445===执行URL:https://www.baidu.com/]]>
+            </line>
+            <line>
+              <![CDATA[1584540509445===执行parames:{"argsTypes":["java.lang.String","java.lang.String","com.taobao.ocr.base.prism.Property","java.lang.String","com.taobao.ocr.client.constants.StructuredType","java.lang.String"],"argsObjs":["https://oats.oss-cn-hangzhou.aliyuncs.com/test/imgset_ocr/idcard/T1D49UXvddXXXXXXXX.jpg","",{"rotate":true},"TB_jack_004e1a3398df4911ae846b7cae21832f","idcard","ac09c33aee80d7465c77cc26e8bae84b"]}]]>
+            </line>
+            <line>
+              <![CDATA[1584540509445===预期结果Expected:{"code":20,"data":{"code":200,"data":{"angle":0,"data":{"姓名":"蒋戈雁","性别":"女","民族":"汉","出生日期":"1998年6月27日","住址":"杭州市上城区黄公厂弄5号102室","身份证号码":"432501199806270023"},"figure":null,"height":1840,"orgHeight":1840,"orgWidth":3264,"recquality":null,"sid":"51296c12fe03a3b52dc3b08997abe90e4e9498c4e4b2afb7a4cd2ec8ece7527281815456","type":null,"width":3264,"wordsInfo":null},"message":null,"successful":true},"success":true,"message":"HSFProviderprocesssucceed."}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zk.test.APIautoTest@60215eee]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-18T22:08:30Z" finished-at="2020-03-18T22:08:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.zk.test.APIautoTest -->
+    </test> <!-- 测试模块 -->
+  </suite> <!-- 接口测试套件 -->
+</testng-results>
